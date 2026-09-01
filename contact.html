@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — GS Partners</title>
+<meta name="description" content="Tell us your category. We'll tell you, free, if there's a gap worth 20 minutes of conversation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">GS <span>Partners</span></a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta desktop-only">Start a conversation</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mobileNav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="services.html">Services</a>
+    <a href="insights.html">Insights</a>
+    <a href="experience.html">Experience</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1 style="max-width:14ch;">Tell us your category.</h1>
+      <p class="lede">The fastest way in: tell us what you sell and where. We'll tell you, free, if there's a gap worth twenty minutes of conversation.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:start;">
+
+        <form action="mailto:hello@gspartners.co" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="company">Company &amp; category</label>
+            <input id="company" name="Company" type="text" placeholder="e.g. regional personal-care brand, North India" required>
+          </div>
+          <div class="field">
+            <label for="message">What's on your mind?</label>
+            <textarea id="message" name="Message" rows="5" placeholder="A line or two on what you sell, where, and what's prompting this."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send it over</button>
+        </form>
+
+        <div class="card" style="padding:32px;">
+          <h3 style="font-size:1.1rem; margin-bottom:14px;">Prefer email directly?</h3>
+          <p class="text-muted" style="margin-bottom:22px; line-height:1.6;">Write to us and include what you sell, where, and roughly which competitors you have in mind. That's enough for us to start.</p>
+          <a href="mailto:hello@gspartners.co" style="font-family:'IBM Plex Mono', monospace; color:var(--accent); font-size:0.95rem;">hello@gspartners.co</a>
+          <hr class="hr" style="margin:24px 0;">
+          <p class="text-muted" style="font-size:0.85rem; line-height:1.6;">We typically reply within two business days. The free gap snapshot itself takes about ten business days once we've scoped your category.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark" style="color:var(--paper-50);">GS <span style="color:var(--plum-300);">Partners</span></div>
+        <p>We find the gap your competitors already found — competitive research for founders and promoters who'd rather know now.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="services.html">Services</a>
+        <a href="insights.html">Insights</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@gspartners.co">hello@gspartners.co</a>
+        <a href="contact.html">Contact form</a>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GS Partners. All rights reserved.</span>
+      <span>Gupta Singh Partners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
