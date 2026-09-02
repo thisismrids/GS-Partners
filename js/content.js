@@ -29,11 +29,13 @@ function insightCardHTML(item) {
 function experienceCardHTML(item) {
   return `
     <div class="exp-card">
-      <div class="client">${item.client}</div>
-      <h3>${item.title}</h3>
-      <div class="row"><b>Focus</b><span>${item.focus}</span></div>
-      <div class="row"><b>Scope</b><span>${item.scope}</span></div>
-      <p style="margin-top:16px;">${item.description}</p>
+      <div class="exp-card-top">
+        <div class="client">${item.client}</div>
+        <h3>${item.title}</h3>
+        <div class="row"><b>Focus</b><span>${item.focus}</span></div>
+      </div>
+      <hr class="exp-divider">
+      <p>${item.description}</p>
     </div>`;
 }
 

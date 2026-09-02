@@ -303,7 +303,10 @@ section.tight{ padding:64px 0; }
   border:1px solid var(--border);
   border-radius:12px;
   padding:26px;
+  display:flex;
+  flex-direction:column;
 }
+.exp-card-top{ min-height:96px; }
 .exp-card .client{
   font-family:'IBM Plex Mono', monospace;
   font-size:11px;
@@ -313,9 +316,15 @@ section.tight{ padding:64px 0; }
   margin-bottom:10px;
 }
 .exp-card h3{ font-size:1.2rem; margin-bottom:12px; }
-.exp-card .row{ display:flex; gap:10px; margin-bottom:8px; font-size:0.9rem; line-height:1.55; }
+.exp-card .row{ display:flex; gap:10px; font-size:0.9rem; line-height:1.55; }
 .exp-card .row b{ min-width:88px; flex:none; font-weight:600; }
 .exp-card .row span{ color:var(--text-muted); }
+.exp-divider{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:18px 0;
+}
+.exp-card > p{ color:var(--text-muted); font-size:0.9rem; line-height:1.6; }
 
 /* founder card */
 .founder-card{
