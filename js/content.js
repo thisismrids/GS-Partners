@@ -68,7 +68,18 @@ function renderAllExperience() {
   el.innerHTML = sorted.map(experienceCardHTML).join('');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = src + '?cb=' + Date.now();
+    s.onload = resolve;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  await Promise.all([loadScript('data/insights.js'), loadScript('data/experience.js')]);
   renderHomeInsights();
   renderHomeExperience();
   renderAllInsights();

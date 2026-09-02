@@ -2,7 +2,7 @@
 
 These two files feed the homepage ("Latest thinking" / "Selected experience") and their full listing pages (`insights.html`, `experience.html`) automatically. Add an entry here — you don't need to touch any HTML.
 
-They're plain `.js` files (not `.json`) on purpose: they just set a `const` array and get loaded with a normal `<script>` tag, so the site works whether you open `index.html` by double-clicking it or it's hosted for real. (`fetch`-ing a local JSON file is blocked by browsers when a page is opened as `file://`, which is why an earlier version of this went blank when previewed locally.)
+They're plain `.js` files (not `.json`) on purpose: they just set a `const` array, so the site works whether you open `index.html` by double-clicking it or it's hosted for real. (`fetch`-ing a local JSON file is blocked by browsers when a page is opened as `file://`, which is why an earlier version of this went blank when previewed locally.) `js/content.js` loads them itself with a cache-busting timestamp on every page load, so an edit here shows up immediately — no need to hard-refresh or bump a version number.
 
 Both are ranked by `date` (newest first). The homepage always shows the top 3; the listing pages show everything.
 
