@@ -419,7 +419,28 @@ input:focus, textarea:focus{
   outline:2px solid var(--accent);
   outline-offset:1px;
 }
+input.invalid, textarea.invalid{
+  border-color:var(--error);
+}
+input.invalid:focus, textarea.invalid:focus{
+  outline-color:var(--error);
+}
 .field{ margin-bottom:20px; }
+.field-error{
+  display:block;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px;
+  color:var(--error);
+  margin-top:6px;
+}
+.form-status{
+  display:none;
+  margin-top:16px;
+  font-size:0.9rem;
+  line-height:1.5;
+}
+.form-status.success{ display:block; color:var(--success); }
+.form-status.error{ display:block; color:var(--error); }
 
 /* footer */
 footer.site{
